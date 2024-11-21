@@ -46,27 +46,33 @@
 
     .project-item .fecha{
         font-size: 0.7rem;
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
 
     /* Adjust layout for mobile devices */
     @media (max-width: 768px) {
+        .projects{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .project-item{
             margin-top: 2rem;
-            height: 10rem;
-            width: 20rem;
+            height: auto;
+            width: 90%;
             font-size: large;
             padding: 10px;
             display: flex;
             overflow: hidden;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: space-between; /* Ensures the content is spaced correctly */
+            align-items: center; /* Vertically center the content */
             position: relative;
         }
 
         .project-item img {
             height: 100%;
             width: 40%;
+            display: flex;
         }
     }
 </style>
