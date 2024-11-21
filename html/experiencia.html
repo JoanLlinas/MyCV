@@ -55,13 +55,22 @@
 
     /* Adjust layout for mobile devices */
     @media (max-width: 768px) {
-        .project-item {
-            flex-direction: column; /* Stack the content vertically on small screens */
+        .project-item{
+            margin-top: 2rem;
+            height: 10rem;
+            width: 27rem;
+            font-size: large;
+            padding: 10px;
+            display: flex;
+            overflow: hidden;
+            justify-content: space-between; /* Ensures the content is spaced correctly */
+            align-items: center; /* Vertically center the content */
+            position: relative; /* Positioning context for absolute image */
         }
 
         .project-item img {
+            height: 100%;
             width: 40%; /* Take full width for the image on small screens */
-            height: auto;
         }
     }
 </style>
