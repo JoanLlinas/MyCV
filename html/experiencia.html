@@ -26,22 +26,79 @@
     }
     .project-item{
         margin-top: 2rem;
+        height: 10rem;
+        width: 40rem;
+        font-size: large;
+        padding: 10px;
+        display: flex;
+        overflow: hidden;
+        justify-content: space-between; /* Ensures the content is spaced correctly */
+        align-items: center; /* Vertically center the content */
+        position: relative; /* Positioning context for absolute image */
+    }
+
+    .project-text{
+        margin-left: 1rem;
+    }
+
+    /* Apply the background image to the right half of the item */
+    .project-item img {
+        width: 40%; /* Half width of the project item */
+        object-fit: cover;
+        
+    }
+
+    .project-item .fecha{
+        font-size: 0.7rem;
+        padding-top: 3rem;
+    }
+
+    /* Adjust layout for mobile devices */
+    @media (max-width: 768px) {
+        .project-item {
+            flex-direction: column; /* Stack the content vertically on small screens */
+        }
+
+        .project-item img {
+            width: 40%; /* Take full width for the image on small screens */
+            height: auto;
+        }
     }
 </style>
 <body>
-    <h1 class="display-3 text-white fw-bold">Joan Llinàs Riera</h1>
+    <h1 class="display-3 text-white fw-bold">EXPERIENCIA</h1>
     <section class="projects">
-        <div class="project-item container-sm border">
-            <a href="./html/experiencia.html" class="project-title display-6 text-white">EXPERIENCIA</a>
+        <div class=" project-item border-dark rounded p-0 bg-white">
+            <div class="project-text">
+                <h6 class="project-titulo fw-bold m-0 fs-5">Nombre de la empresa</h6>
+                <p class="m-0 fs-6"><strong>Cargo:</strong> El cargo que sea</p>
+                <p class="fecha m-0">dd/mm/yyyy – dd/mm/yyyy</p>
+            </div>
+            <img src="../media/capdepera.jpg" alt="" class="">
         </div>
-        <div class="project-item container-sm border d-flex justify-content-center align-items-center">
-            <a href="./html/proyectos.html" class="project-title display-6 text-white">PROYECTOS</a>
+        <div class=" project-item border-dark rounded p-0 bg-white">
+            <div class="project-text">
+                <h6 class="project-titulo fw-bold m-0 fs-5">Nombre de la empresa</h6>
+                <p class="m-0 fs-6"><strong>Cargo:</strong> El cargo que sea</p>
+                <p class="fecha m-0">dd/mm/yyyy – dd/mm/yyyy</p>
+            </div>
+            <img src="../media/capdepera.jpg" alt="" class="">
         </div>
-        <div class="project-item container-sm border d-flex justify-content-center align-items-center">
-            <a href="./html/estudios.html" class="project-title display-6 text-white">ESTUDIOS</a>
+        <div class=" project-item border-dark rounded p-0 bg-white">
+            <div class="project-text">
+                <h6 class="project-titulo fw-bold m-0 fs-5">Nombre de la empresa</h6>
+                <p class="m-0 fs-6"><strong>Cargo:</strong> El cargo que sea</p>
+                <p class="fecha m-0">dd/mm/yyyy – dd/mm/yyyy</p>
+            </div>
+            <img src="../media/capdepera.jpg" alt="" class="">
         </div>
-        <div class="project-item container-sm border d-flex justify-content-center align-items-center">
-            <a href="./html/contacto.html" class="project-title display-6 text-white">CONTACTO</a>
+        <div class=" project-item border-dark rounded p-0 bg-white">
+            <div class="project-text">
+                <h6 class="project-titulo fw-bold m-0 fs-5">Nombre de la empresa</h6>
+                <p class="m-0 fs-6"><strong>Cargo:</strong> El cargo que sea</p>
+                <p class="fecha m-0">dd/mm/yyyy – dd/mm/yyyy</p>
+            </div>
+            <img src="../media/capdepera.jpg" alt="" class="">
         </div>
     </section>
     </div>
