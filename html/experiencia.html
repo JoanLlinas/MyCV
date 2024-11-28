@@ -11,14 +11,14 @@
 </head>
 <style>
     body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         background: linear-gradient(80deg, rgb(23, 22, 22), rgb(188, 67, 67));
-        min-height: 100vh;
     }
     a{
         text-decoration: none;
+    }
+
+    .projects{
+        margin-bottom: 2rem;
     }
     .project-item{
         margin-top: 2rem;
@@ -26,11 +26,6 @@
         width: 40rem;
         font-size: large;
         padding: 10px;
-        display: flex;
-        overflow: hidden;
-        justify-content: space-between; /* Ensures the content is spaced correctly */
-        align-items: center; /* Vertically center the content */
-        position: relative; /* Positioning context for absolute image */
     }
 
     .project-text{
@@ -41,10 +36,9 @@
         color: rgb(195, 79, 53);
     }
 
-    /* Apply the background image to the right half of the item */
     .project-item img {
         height: 100%;
-        width: 40%; /* Half width of the project item */
+        width: 40%;
         object-fit: cover;
         
     }
@@ -56,22 +50,12 @@
 
     
     @media (max-width: 768px) {
-        .projects{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
         .project-item{
             margin-top: 2rem;
             height: 10rem;
             width: 90%;
             font-size: large;
             padding: 10px;
-            display: flex;
-            overflow: hidden;
-            justify-content: space-between; 
-            align-items: center;
-            position: relative;
         }
 
         .project-item img {
@@ -83,14 +67,13 @@
         .project-item .fecha{
             font-size: 0.7rem;
             padding-top: 2rem;
-            
         }
     }
 </style>
-<body>
+<body class="d-flex flex-column align-items-center min-vh-100">
     <h1 class="display-3 text-white fw-bold">EXPERIENCIA</h1>
-    <section class="projects">
-        <div class=" project-item border-dark rounded p-0 bg-white">
+    <section class="projects d-flex flex-column align-items-center">
+        <div class="project-item d-flex justify-content-between border-dark rounded p-0 bg-white position-relative overflow-hidden align-items-center">
             <div class="project-text">
                 <h6 class="project-titulo fw-bold m-0 fs-5">IES Capdepera</h6>
                 <p class="m-0 fs-6">Tecnico TIC (prácticas)</p>
@@ -98,7 +81,7 @@
             </div>
             <img src="../media/capdepera.jpg" alt="" class="">
         </div>
-        <div class=" project-item border-dark rounded p-0 bg-white">
+        <div class="project-item d-flex justify-content-between border-dark rounded p-0 bg-white position-relative overflow-hidden align-items-center">
             <div class="project-text">
                 <h6 class="project-titulo fw-bold m-0 fs-5">Imperio Galactico</h6>
                 <p class="m-0 fs-6">Fontanero</p>
@@ -106,7 +89,7 @@
             </div>
             <img src="../media/deathstar.jpg" alt="" class="">
         </div>
-        <div class=" project-item border-dark rounded p-0 bg-white">
+        <div class="project-item d-flex justify-content-between border-dark rounded p-0 bg-white position-relative overflow-hidden align-items-center">
             <div class="project-text">
                 <h6 class="project-titulo fw-bold m-0 fs-5">Auschwitz</h6>
                 <p class="m-0 fs-6">Recursos Humanos</p>
@@ -114,13 +97,21 @@
             </div>
             <img src="../media/alemanitos.jpg" alt="" class="">
         </div>
-        <div class=" project-item border-dark rounded p-0 bg-white">
+        <div class="project-item d-flex justify-content-between border-dark rounded p-0 bg-white position-relative overflow-hidden align-items-center">
             <div class="project-text">
-                <h6 class="project-titulo fw-bold m-0 fs-5">Nombre de la empresa</h6>
-                <p class="m-0 fs-6"><strong>Cargo:</strong> El cargo que sea</p>
-                <p class="fecha m-0">dd/mm/yyyy – dd/mm/yyyy</p>
+                <h6 class="project-titulo fw-bold m-0 fs-5">Central nuclear de Chernóbil</h6>
+                <p class="m-0 fs-6">Supervisor de control de calidad</p>
+                <p class="fecha m-0">12/06/1984 – 26/04/1986</p>
             </div>
-            <img src="../media/capdepera.jpg" alt="" class="">
+            <img src="../media/chernobil.jpeg" alt="" class="">
+        </div>
+        <div class="project-item d-flex justify-content-between border-dark rounded p-0 bg-white position-relative overflow-hidden align-items-center">
+            <div class="project-text">
+                <h6 class="project-titulo fw-bold m-0 fs-5">Mercadona</h6>
+                <p class="m-0 fs-6">Cajero</p>
+                <p class="fecha m-0">12/06/2024 – 16/09/2024</p>
+            </div>
+            <img src="../media/mercadona.jpg" alt="" class="">
         </div>
     </section>
     </div>
